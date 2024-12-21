@@ -1,4 +1,4 @@
-name: Insider LOAD Test Cases
+name: Insider Load Test Cases
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
           with:
             test-plan-path: './n11LoadTest.jmx'
         - name: Upload reports
-          uses: actions/upload-artifact@v2
+          uses: actions/upload-artifact@v3
           with:
             name: jmeter-report
             path: result.jtl
